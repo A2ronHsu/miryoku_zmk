@@ -10,6 +10,14 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+    u_mt2: u_mt2 {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+    
     u_lt: u_lt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;

@@ -32,7 +32,21 @@ U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_relea
   }; \
 };
 
+#define MIRYOKU_TAPDELAY_MT2(CODE) \
+/ { \
+  behaviors { \
+    u_tapdelay_mt_A: u_tapdelay_mt_A {\
+      compatible = "zmk,behavior-hold-tap";\
+      #binding-cells = <2>;\
+      tapping-term-ms = <280>;  \
+      flavor = "tap-preferred";\
+      bindings = <&kp>, <&u_tapdelay_tap_A>;\
+    };\
+  };\
+};
+
 #define U_MT(MOD, TAP) &u_tapdelay_mt_##TAP MOD 0
+#define U_MT2(MOD, TAP) &u_tapdelay_mt_A##TAP MOD 0
 #define U_LT(LAYER, TAP) &u_tapdelay_lt_##TAP LAYER 0
 
 #define MIRYOKU_TAPDELAY_LIST \

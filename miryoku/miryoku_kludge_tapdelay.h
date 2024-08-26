@@ -40,7 +40,7 @@ U_MACRO(u_tapdelay_tap_##CODE, bindings = <&macro_press &kp CODE>, <&macro_relea
       #binding-cells = <2>;\
       tapping-term-ms = <280>;  \
       flavor = "tap-preferred";\
-      bindings = <&kp>, <&u_tapdelay_tap_A>;\
+      bindings = <&kp>, <&u_tapdelay_tap_##CODE>;\
     };\
   };\
 };

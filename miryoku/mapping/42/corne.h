@@ -6,12 +6,12 @@
 #define XXX &none
 
 
-#define L1 &kp GRAVE
-#define L2 &kp EXCL
-#define L3 &kp BSLH
-#define R1 &kp EQUAL
-#define R2 &kp MINUS
-#define R3 &kp SEMICOLON
+#define L1 &kp LALT
+#define L2 &kp LSHFT
+#define L3 &kp LCTRL
+#define R1 &kp LGUI
+#define R2 &kp LSHFT
+#define R3 &kp RALT
 
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
